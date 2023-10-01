@@ -1,0 +1,21 @@
+{
+    "failed_login":[
+        {
+            "username": "standard_user",
+            "password": "abcdefg12345"
+        },
+        {
+            "username": "wrong_user",
+            "password": "abcdefg12345"
+        },
+        {
+            "username": "locked_out_user",
+            "password": "secret_sauce",
+            "error_msg": "Sorry, this user has been locked out"
+        }
+    ],
+    "success_login": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    }
+}
