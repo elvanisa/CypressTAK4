@@ -1,0 +1,17 @@
+name: Saucedemo Tests
+
+on:
+  schedule:
+    - cron:  '5 * * * *'
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run Saucedemo Test
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          spec: cypress/e2e/3-saucedemo/cart.cy.js
