@@ -2,7 +2,7 @@ name: Saucedemo Tests
 
 on:
   schedule:
-    - cron:  '5 * * * *'
+    - cron: '5 * * * *'
 
 jobs:
   cypress-run:
