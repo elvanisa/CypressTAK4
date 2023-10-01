@@ -1,0 +1,18 @@
+{
+  "name": "tak_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "saucedemo": "npx cypress run --browser chrome --spec 'cypress/e2e/3-saucedemo/*.cy.js'",
+    "login": "npx cypress run --browser chrome --spec 'cypress/e2e/3-saucedemo/login.cy.js'",
+    "cart": "npx cypress run --spec 'cypress/e2e/3-saucedemo/cart.cy.js'",
+    "cart2": "npx cypress run --env url_staging --spec 'cypress/e2e/3-saucedemo/cart.cy.js'",
+    "api": "npx cypress run --spec 'cypress/e2e/5-api/reqrest.cy.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.0"
+  }
+}
